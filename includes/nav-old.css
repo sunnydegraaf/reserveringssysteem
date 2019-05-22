@@ -1,0 +1,58 @@
+.nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkslategray;
+    padding: 10px;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    line-height: 70px;
+    background-color: #0087c6;
+    z-index: 1;
+    width: 100%;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    width: 26px;
+    float: right;
+    display: block;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+label {
+
+}
+
+.menu {
+    text-align: left;
+    position: absolute;
+    z-index: 10;
+    top: 90px;
+    display: none;
+    width: 150px;
+    right: 60px;
+}
+
+.menu a {
+    display: block;
+    margin: 0;
+    padding: 0px 30px;
+}
+
+#toggle:checked + .menu {
+    display: block;
+}
